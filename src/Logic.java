@@ -25,8 +25,20 @@ public class Logic {
         checkout();
     }
 
+    public void start(String name) {
+        welcome(name);
+        selection();
+        checkout();
+    }
+
     private void welcome() {
         System.out.println("Welcome to the delivery app!");
+        System.out.println("Now you can start ordering!");
+        System.out.println();
+    }
+
+    private void welcome(String name) {
+        System.out.println("Welcome to the delivery app, " + name + "!");
         System.out.println("Now you can start ordering!");
         System.out.println();
     }
